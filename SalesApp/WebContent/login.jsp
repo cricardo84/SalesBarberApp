@@ -8,16 +8,29 @@
 </head>
 <body>
 <form action="loginServlet" method="get">
-	<div>
-		<label>Usuario:</label>
-		<input type="text" id="usuario">
-	</div>
-	
-	<div>
-		<label>Contraseña:</label>
-		<input type="password" id="contrasena">
-	</div>
-	<input type="submit" value="Aceptar">
+	<table>
+		<tr>
+			<td>
+				<label>Usuario:</label>
+			</td>
+			<td>
+				<input type="text" id="usuario">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Contraseña:</label>
+			</td>
+			<td>
+				<input type="password" id="contrasena">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="submit" value="Aceptar">
+			</td>
+		</tr>
+	</table>	
 </form>
 </body>
 </html>

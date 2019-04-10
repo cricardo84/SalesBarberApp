@@ -7,6 +7,8 @@
 <title>Registrar Venta</title>
 </head>
 <body>
-REgistrar VEnta...!!!
+<form action="registrarVentaServlet">
+
+</form>
 </body>
 </html>
