@@ -7,8 +7,11 @@
 <title>Registrar Venta</title>
 </head>
 <body>
-<form action="registrarVentaServlet">
 
-</form>
+<div class="container" style="text-align: left;">
+	<p style="color:#A4A4A4;">Bienvenido: <%= request.getSession().getAttribute("nombreEmpleado") %></p>
+	<a href="/ServletExample/CerrarSesionServlet">Cerrar Sesión</a>
+</div>
+
 </body>
 </html>

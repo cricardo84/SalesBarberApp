@@ -1,21 +1,16 @@
 package com.pe.ventas.bean;
 
+import java.sql.Timestamp;
+
 public class Usuario {
 
 	private int id;
 	private String usuario;
 	private String password;
-	private int idEmpleado;
+	private Timestamp lastLogin;
+	private Empleado empleado;
 	
 	public Usuario() {
-	}
-	
-	public Usuario(int id, String usuario, String password, int idEmpleado) {
-		super();
-		this.id = id;
-		this.usuario = usuario;
-		this.password = password;
-		this.idEmpleado = idEmpleado;
 	}
 	
 	public int getId() {
@@ -36,17 +31,22 @@ public class Usuario {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public int getIdEmpleado() {
-		return idEmpleado;
+	public Timestamp getLastLogin() {
+		return lastLogin;
 	}
-	public void setIdEmpleado(int idEmpleado) {
-		this.idEmpleado = idEmpleado;
+	public void setLastLogin(Timestamp lastLogin) {
+		this.lastLogin = lastLogin;
 	}
-	
-	@Override
-	public String toString() {
-		return "Usuario [id=" + id + ", usuario=" + usuario + ", password=" + password + ", idEmpleado=" + idEmpleado
-				+ "]";
+	public Empleado getEmpleado() {
+		return empleado;
+	}
+	public void setEmpleado(Empleado empleado) {
+		this.empleado = empleado;
 	}
 
+	@Override
+	public String toString() {
+		return "Usuario [id=" + id + ", usuario=" + usuario + ", lastLogin=" + lastLogin + ", empleado=" + empleado
+				+ "]";
+	}
 }
